@@ -45,7 +45,7 @@ def upsampling_block(input_tensor, n_filters, name, concat_with):
   return x
 
 
-  def build(height, width, depth):
+def build(height, width, depth):
   # input
   i = Input(shape=(height, width, depth))
 
@@ -85,6 +85,4 @@ def upsampling_block(input_tensor, n_filters, name, concat_with):
   model = Model(inputs=i, outputs=o)
   return model
 
-
-
-  model = build(HEIGHT, WIDTH, 3)
+model = build(HEIGHT, WIDTH, 3)
