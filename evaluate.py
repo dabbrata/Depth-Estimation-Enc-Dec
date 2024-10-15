@@ -6,16 +6,11 @@ r2_scores = []
 # Load test data
 def load_test_data():    
     print('Loading test data...', end='')
-#     def extract_zip(input_zip):
-#         input_zip=ZipFile(input_zip)
-#         return {name: input_zip.read(name) for name in input_zip.namelist()}
-#     data = extract_zip('nyu_test.zip')
     
     rgb = np.load('/kaggle/working/eigen_test_rgb.npy')
     depth = np.load('/kaggle/working/eigen_test_depth.npy')
     crop = np.load('/kaggle/working/eigen_test_crop.npy')
     print('Test data loaded.\n')
-    
     return rgb, depth, crop
 
 def DepthNorm(x, maxDepth):
@@ -29,12 +24,6 @@ def predict(model, images, minDepth=10, maxDepth=1000, batch_size=6):
     # Compute predictions
     images = tf.image.resize(images, [240, 320])
     predictions = model.predict(images, batch_size=batch_size)
-    # Put in expected range
-#     plt.imshow(predictions[0], cmap='gray')
-#     plt.show()
-#     plt.imshow(np.clip(DepthNorm(predictions[0], maxDepth=100)), cmap='gray')
-#     plt.show()
-#     return np.clip(DepthNorm(predictions, maxDepth=100), minDepth, maxDepth) / maxDepth
     return predictions
 
 def scale_up(scale, images):
