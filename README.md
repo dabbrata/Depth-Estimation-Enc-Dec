@@ -3,7 +3,7 @@
 ## Overview
 Monocular Depth Estimation refers to the process of predicting depth information from a single 2D image. This technique has wide applications in areas like robotics, autonomous driving, and augmented reality. It allows machines to understand the 3D structure of a scene without requiring expensive stereo cameras or depth sensors.
 In this simple project, an input image is processed by a deep learning model to estimate the depth map, which encodes the relative distances of objects in the scene. Here the deep learning model is basically an encoder-decoder architecture where a pretrained model IRv2 is used as an encoder to extract feature from the image more precisely.
-<br/>The model architecture is like this:
+<br/>The model architecture is like this:<br/>
 <img src="Images/overview_arch.png" />
 
 ## Quickstart the project
