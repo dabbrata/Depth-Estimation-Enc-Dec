@@ -1,0 +1,12 @@
+numpy==1.26.4
+Pillow==10.4.0
+cv2==4.10.0
+imutils==0.5.4
+tensorflow==2.16.1
+skimage==0.23.2
+matplotlib==3.7.5
+
+
+
+
+
