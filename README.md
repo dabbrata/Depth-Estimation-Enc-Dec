@@ -11,7 +11,8 @@ In this simple project, an input image is processed by a deep learning model to 
 4. Run all the cells of that imported (.ipynb) file.
 
 ## Dataset
-The dataset used to train the depth estimation model taken from <a href="[https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2](https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2)">here</a>.
+The dataset used to train the depth estimation model taken from <a href="https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2">here</a>.
+
 
 This dataset contains 1449 densely labeled pairs of aligned RGB and depth images, 464 new scenes taken from 3 cities, 
 407,024 new unlabeled frames and Each object is labeled with a class and an instance number (cup1, cup2, cup3, etc).
