@@ -41,8 +41,8 @@ Future improvements may include optimizing the model with more fine tunning.
 <th>Output</th>
 </tr>
 <tr>
-<td><img src="images/test.jpg"/></td>
-<td><img src="images/test-result.png"/></td>
+<td><img src="Images/rgb.png"/></td>
+<td><img src="Images/high.png"/></td>
 </tr>
 </table>
 
