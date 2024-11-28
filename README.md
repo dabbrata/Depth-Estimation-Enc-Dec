@@ -47,11 +47,9 @@ Future improvements may include optimizing the model with more fine tunning.
 </table>
 
 ## Links and References
-- Face Mask Detection dataset: https://www.kaggle.com/andrewmvd/face-mask-detection
-- InceptionV3: https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3
-- Face Detection using Haar Cascades: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html
-- How to Perform Face Detection with Deep Learning: https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/
-- GitHub MTCNN: https://github.com/ipazc/mtcnn
+- Depth estimation dataset: https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2
+- Inception-Resnet-v2: https://paperswithcode.com/method/inception-resnet-v2
+- Relevant Paper: https://ieeexplore.ieee.org/document/9376365
 
 ## Licensing
 The code in this project is licensed under [MIT License](LICENSE).
