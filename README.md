@@ -18,22 +18,22 @@ This dataset contains 1449 densely labeled pairs of aligned RGB and depth images
 407,024 new unlabeled frames and Each object is labeled with a class and an instance number (cup1, cup2, cup3, etc).
 
 ## Workflow
-1. <b><a href="https://github.com/FarhanSadaf/face-mask-detection/blob/master/1_data-preprocessing.ipynb">Data preprocessing</a></b> : 
-All images have their bounding boxes in the PASCAL VOC format and their info saved in `XML` format in `annotaions` directory. 
-Only the region bounded by bounding box taken as input and their respective labels taken as output.
+1. <b>Data preprocessing</b> :
+a. Augmentation: Horizontal flipping adds variety to the training dataset and helps the model generalize better.
+b. Normalization Consistency: Both RGB images and depth maps are normalized to the same scale ([0, 1]), ensuring compatibility during training.
+c. Resizing: Ensures uniform dimensions for both images and depth maps, critical for batch processing in deep learning models.
+d. Grayscale Conversion: Reduces depth maps to a single channel, reflecting their intrinsic nature as 2D scalar fields.
 
-2. <b><a href="https://github.com/FarhanSadaf/face-mask-detection/blob/master/2_training-face-mask-model.ipynb">Training mask detector model</a></b> :
-Transfer learning was used to train the inputs. The classifier model was built with <a href="https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3">InceptionV3</a> neural network architecture.
-After training for 20 epochs, accuracy on test set was 96.81%.
+2. <b>Training depth estimation model</b> :
+Transfer learning was used to train the inputs. Here, the pretrained model `Inception Resnet v2` is used as encoder for feature extraction.
+After training for 15 epochs, the accuracy for three kinds of thresholds are:
+a. Delta1: 89.3%
+b. Delta2: 96.7%
+c. Delta3: 98.5%
 
-3. <b><a href="https://github.com/FarhanSadaf/face-mask-detection/blob/master/3.2_detecting-mask-w-mtcnn.ipynb">Detecting face mask </a><a href="https://github.com/FarhanSadaf/face-mask-detection/blob/master/3.1_detecting-mask-w-haarcascade.ipynb">in real-time</a></b> :
-First task was to detect faces from each frame of the video. 
-At first I used <a href="https://github.com/FarhanSadaf/face-mask-detection/blob/master/3.1_detecting-mask-w-haarcascade.ipynb">Haarcascade classifer</a> from OpenCV for face detection. Average FPS I got while running on my machine was around 16. 
-But face detection wasn't that accurate. This classifer struggled detecting faces with mask. In low-light condition it struggled the most.
-<br/>Then I tried <a href="https://github.com/FarhanSadaf/face-mask-detection/blob/master/3.2_detecting-mask-w-mtcnn.ipynb">MTCNN</a> for face detection. 
-This algorithm performed great detecting faces, even in the low light. But while running on my machine, the average FPS I got was about 1.4. 
-Which is pretty slow comparing with haarcascade classifier. 
-
+3. Initially, I used a basic convolutional encoder-decoder architecture for this task. While the model was simple and lightweight, the predicted depth maps lacked accuracy, especially in regions with fine details or complex textures.
+To improve the accuracy, I implemented an enhanced encoder-decoder architecture with attention mechanisms and skip connections. This model significantly improved depth prediction quality, especially in areas with intricate details and varying lighting conditions. However, the computational complexity increased.
+Future improvements may include optimizing the model with more fine tunning.
 ## Results
 <table>
 <tr>
