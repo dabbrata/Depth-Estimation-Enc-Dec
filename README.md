@@ -68,8 +68,8 @@ Future improvements may include optimizing the model with more fine tunning.
                         <th>Output</th>
                     </tr>
                     <tr>
-                        <td><img src="Images/rgb.png" alt="Input Image"/></td>
-                        <td><img src="Images/high.png" alt="Output Image"/></td>
+                        <td><img src="Images/k3_rgb.png" alt="Input Image"/></td>
+                        <td><img src="Images/k3_out.png" alt="Output Image"/></td>
                     </tr>
                 </table>
             </td>
@@ -81,8 +81,8 @@ Future improvements may include optimizing the model with more fine tunning.
                         <th>Output</th>
                     </tr>
                     <tr>
-                        <td><img src="Images/rgb.png" alt="Input Image"/></td>
-                        <td><img src="Images/high.png" alt="Output Image"/></td>
+                        <td><img src="Images/city_rgb.png" alt="Input Image"/></td>
+                        <td><img src="Images/city_out.png" alt="Output Image"/></td>
                     </tr>
                 </table>
             </td>
@@ -90,6 +90,8 @@ Future improvements may include optimizing the model with more fine tunning.
     </table>
 </body>
 </html>
+
+
 
 
 
