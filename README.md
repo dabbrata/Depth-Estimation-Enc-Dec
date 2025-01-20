@@ -37,16 +37,61 @@ c. Delta3: 98.5%
 To improve the accuracy, I implemented an enhanced encoder-decoder architecture with attention mechanisms and skip connections. This model significantly improved depth prediction quality, especially in areas with intricate details and varying lighting conditions. However, the computational complexity increased.
 Future improvements may include optimizing the model with more fine tunning.
 ## Results
-<table>
-<tr>
-<th>Input</th>
-<th>Output</th>
-</tr>
-<tr>
-<td><img src="Images/rgb.png"/></td>
-<td><img src="Images/high.png"/></td>
-</tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <title>Enc-Dec-IRv2 on NYU-Depth V2</title> -->
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <h4>Enc-Dec-IRv2 on NYU-Depth V2</h4>
+                <table>
+                    <tr>
+                        <th>Input</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td><img src="Images/rgb.png" alt="Input Image"/></td>
+                        <td><img src="Images/high.png" alt="Output Image"/></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <h4>Enc-Dec-IRv2 on KITTI</h4>
+                <table>
+                    <tr>
+                        <th>Input</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td><img src="Images/rgb.png" alt="Input Image"/></td>
+                        <td><img src="Images/high.png" alt="Output Image"/></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <h4>Enc-Dec-IRv2 on Cityscapes</h4>
+                <table>
+                    <tr>
+                        <th>Input</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td><img src="Images/rgb.png" alt="Input Image"/></td>
+                        <td><img src="Images/high.png" alt="Output Image"/></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
 
 ## Links and References
 - Depth estimation dataset: https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2
