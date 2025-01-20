@@ -13,11 +13,17 @@ In this simple project, an input image is processed by a deep learning model to 
 4. Run all the cells of that imported (.ipynb) file.
 
 ## Dataset
-The dataset used to train the depth estimation model taken from <a href="https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2">here</a>.
+The dataset used to train the depth estimation model: 
 
-
+#### NYU Depth V2 <a href="https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2">Link</a>.
 This dataset contains 1449 densely labeled pairs of aligned RGB and depth images, 464 new scenes taken from 3 cities, 
 407,024 new unlabeled frames and Each object is labeled with a class and an instance number (cup1, cup2, cup3, etc).
+
+#### KITTI <a href="https://www.kaggle.com/datasets/garymk/kitti-3d-object-detection-dataset">Link1</a>, <a href="https://www.kaggle.com/datasets/emadmous/kitti-sfd-train">Link2</a>.
+For the application of our model on the KITTI dataset, we selected a subset of images from the entire dataset. Specifically, we utilized 7,281 images for training and an additional 200 images for testing the model's performance.
+
+#### Cityscapes <a href="https://www.kaggle.com/datasets/andreabaccolo/cityscapes">Link</a>.
+In applying our model to the Cityscapes dataset, we selected a portion of the dataset for evaluation. Specifically, 1,571 images were used for training, and 500 images were reserved for testing the model’s performance.
 
 ## Workflow
 1. <b>Data preprocessing</b> :
@@ -91,12 +97,14 @@ Future improvements may include optimizing the model with more fine tunning.
 </body>
 </html>
 
-
+https://github.com/user-attachments/assets/fb87f76a-f076-4ece-917b-eb40cfc5083d
 
 
 
 ## Links and References
-- Depth estimation dataset: https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2
+- Depth estimation dataset (NYU Depth v2): https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2
+- Depth estimation dataset (KITTI): https://www.kaggle.com/datasets/garymk/kitti-3d-object-detection-dataset, https://www.kaggle.com/datasets/emadmous/kitti-sfd-train
+- Depth estimation dataset (Cityscapes): https://www.kaggle.com/datasets/andreabaccolo/cityscapes
 - Inception-Resnet-v2: https://paperswithcode.com/method/inception-resnet-v2
 - Relevant Paper: https://ieeexplore.ieee.org/document/9376365
 
