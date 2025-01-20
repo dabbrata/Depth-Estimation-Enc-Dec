@@ -1,4 +1,4 @@
-# Depth Estimation from Monocular Images with Enhanced Encoder-Decoder Architecture
+# Enhanced Encoder-Decoder Architecture for Accurate Monocular Depth Estimation 
 
 ## Overview
 Monocular Depth Estimation refers to the process of predicting depth information from a single 2D image. This technique has wide applications in areas like robotics, autonomous driving, and augmented reality. It allows machines to understand the 3D structure of a scene without requiring expensive stereo cameras or depth sensors.
