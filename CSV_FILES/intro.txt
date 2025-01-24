@@ -1,1 +1,2 @@
+Here, the image 'paths' for all training and testing images and their corresponding ground truth images are give sequentially.
 
