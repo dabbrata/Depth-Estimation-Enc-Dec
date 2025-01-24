@@ -132,5 +132,9 @@ https://github.com/user-attachments/assets/fb87f76a-f076-4ece-917b-eb40cfc5083d
 - Inception-Resnet-v2: https://paperswithcode.com/method/inception-resnet-v2
 - Relevant Paper: https://ieeexplore.ieee.org/document/9376365
 
+## Contributors
+1. [Argho Deb Das](https://github.com/MrArgho)
+2. [Farhan Sadaf](https://github.com/FarhanSadaf)
+
 ## Licensing
 The code in this project is licensed under [MIT License](LICENSE).
