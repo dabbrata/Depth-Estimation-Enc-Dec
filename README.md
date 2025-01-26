@@ -136,6 +136,7 @@ https://github.com/user-attachments/assets/fb87f76a-f076-4ece-917b-eb40cfc5083d
 ## Licensing
 The code in this project is licensed under [MIT License](LICENSE).
 
+<!--
 ## Citation
 
 If you find this work useful, please cite it using the following BibTeX entry:
@@ -150,4 +151,5 @@ If you find this work useful, please cite it using the following BibTeX entry:
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2410.11610}, 
 }
+-->
 
