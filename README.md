@@ -60,9 +60,7 @@ In applying our model to the Cityscapes dataset, we selected a portion of the da
 
 <body>
 <!--     <h4><b>2. Training depth estimation model: </b></h4> -->
-    <p>3. Initially, I used a basic convolutional encoder-decoder architecture for this task. While the model was simple and lightweight, the predicted depth maps lacked accuracy, especially in regions with fine     details or complex textures.
-    To improve the accuracy, I implemented an enhanced encoder-decoder architecture with attention mechanisms and skip connections. This model significantly improved depth prediction quality, especially in areas     with intricate details and varying lighting conditions. However, the computational complexity increased.
-    Future improvements may include optimizing the model with more fine tunning.</p>
+    <p>3. Initially, we used a basic convolutional encoder-decoder architecture for this task. While the model was simple and lightweight, the predicted depth maps lacked accuracy, especially in regions with         fine details or complex textures. To improve the accuracy, we implemented an enhanced encoder-decoder architecture with attention mechanisms and skip connections. This model significantly improved depth          prediction quality, especially in areas with intricate details and varying lighting conditions. However, the computational complexity increased. Future improvements may include optimizing the model with more     fine tunning.</p>
 </body>
 
 ## Results
