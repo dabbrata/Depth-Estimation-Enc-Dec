@@ -1,8 +1,9 @@
 # Enhanced Encoder-Decoder Architecture for Accurate Monocular Depth Estimation 
 
 ## Overview
-Monocular Depth Estimation refers to the process of predicting depth information from a single 2D image. This technique has wide applications in areas like robotics, autonomous driving, and augmented reality. It allows machines to understand the 3D structure of a scene without requiring expensive stereo cameras or depth sensors.
-In this simple project, an input image is processed by a deep learning model to estimate the depth map, which encodes the relative distances of objects in the scene. Here the deep learning model is basically an encoder-decoder architecture where a pretrained model IRv2 is used as an encoder to extract feature from the image more precisely.
+Monocular Depth Estimation is a technique for predicting depth information from a single 2D image, enabling the understanding of 3D scene structure without requiring expensive stereo camera systems or depth sensors. By estimating the relative distances of objects within a scene, this method finds applications in robotics, autonomous driving, augmented reality, and other domains where spatial awareness is critical.
+In this project, we generate depth maps that represent the relative distances of objects in a scene from the viewpoint of the camera. These depth maps are obtained using a deep learning-based encoder-decoder architecture designed to handle the challenges of single-image depth estimation. The encoder, powered by the pretrained Inception-ResNet-v2 (IRv2) model, extracts rich and precise multi-scale features from the input image. IRv2, known for its deep network structure and ability to capture complex patterns, ensures that both local and global image features are effectively learned, leading to robust depth predictions across a wide range of object scales and scene variations.
+The decoder further processes these features to generate the final depth map. It integrates the multi-scale features extracted by the encoder to reconstruct a high-resolution depth representation, capturing both the global context of the scene and intricate details such as object boundaries and fine textures. Additionally, the model achieves an efficient inference time, making it well-suited for real-time applications where speed is crucial.
 <br/>The model architecture is like this:<br/>
 #### Enc-Dec-IRv2 Architecture:
 <img src="Images/net_architecture.png" /><br/>
@@ -138,3 +139,19 @@ https://github.com/user-attachments/assets/fb87f76a-f076-4ece-917b-eb40cfc5083d
 
 ## Licensing
 The code in this project is licensed under [MIT License](LICENSE).
+
+## Citation
+
+If you find this work useful, please cite it using the following BibTeX entry:
+
+```bibtex
+@misc{das2025enhancedencoderdecoderarchitectureaccurate,
+      title={Enhanced Encoder-Decoder Architecture for Accurate Monocular Depth Estimation}, 
+      author={Dabbrata Das and Argho Deb Das and Farhan Sadaf},
+      year={2025},
+      eprint={2410.11610},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.11610}, 
+}
+
